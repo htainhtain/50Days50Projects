@@ -1,0 +1,101 @@
+html{
+  height: 100%;
+}
+
+body{
+  overflow: hidden;
+  margin: 0;
+  height: 100%;
+
+}
+
+h2{
+  color: white;
+}
+
+
+.cards{
+  display: flex;
+  height: 80%;
+  margin: 4em 2em;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.cards-img{
+  width: 10%;
+  height: 100%;
+  border-radius: 50px;
+  cursor: pointer;
+  margin: 0px 10px;
+  transition: flex 0.8s ease-in;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.cards-img:hover{
+  opacity: 0.8;
+}
+
+.active{
+  flex-grow: 5;
+}
+
+.myanmar{
+  background-image: url('images/myanmar.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.thailand{
+  background-image: url('images/thailand.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.indonesia{
+  background-image: url('images/indonesia.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.vietnam{
+  background-image: url('images/vietnam.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.cambodia{
+  background-image: url('images/cambodia.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+
+@media(max-width: 1024px){
+  .cards{
+    flex-direction: column;
+    align-items: center;
+    /* text-align: center; */
+  }
+
+  .cards-img{
+    width: 80%;
+    height: 15%;
+    margin: 10px 0px;
+  }
+
+  h2{
+    font-size: 3em;
+  }
+
+}
+
+/* @media(max-width: 960px){
+  .cards-img{
+    width: 80%;
+    height: 20%;
+    margin: 10px 0px;
+  }
+} */

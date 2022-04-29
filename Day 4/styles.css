@@ -1,0 +1,50 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  width: 100vw;
+  height: 100vh;
+  background-color: #765BEF;
+}
+
+.container{
+  font-size: 150%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.search-bar{
+  background-color: white;
+  padding: 2vh 1.9vh;
+  cursor: pointer;
+}
+
+input{
+  border: 0;
+  padding: 0;
+  transition: width 0.5s ease;
+  width: 0px;
+}
+
+input,
+input::-webkit-input-placeholder {
+    font-size: 17px;
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+input.hide{
+  width: 200px;
+}
+
+.fa-magnifying-glass.hide{
+  padding-right: 5px;
+}

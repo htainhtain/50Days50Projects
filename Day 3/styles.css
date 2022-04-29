@@ -1,0 +1,115 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+  overflow-x: hidden;
+  background-color: #333333;
+}
+
+h1{
+  margin: 0;
+}
+
+.container{
+  width: 100vw;
+}
+
+.description{
+  padding: 13vh 13vw;
+  transition: transform 0.5s linear;
+  transform-origin: top left;
+  background-color: #FAFAFA;
+}
+
+.paragraph{
+  line-height: 4vh;
+}
+
+img{
+  max-width: 100%;
+  max-height: 100%;
+  background-size: cover;
+}
+
+/* navigation */
+
+.circle{
+  height: 200px;
+  width: 200px;
+  background-color: rgb(255,121,121);
+  border-radius: 50%;
+  position: fixed;
+  top: -100px;
+  left: -100px;
+  transition: transform 0.5s linear;
+  z-index: 1;
+}
+
+button{
+  background: transparent;
+  height: 100px;
+  color: #fff;
+  border: 0;
+  position: absolute;
+  top: 100px;
+  left: 130px;
+  font-size: 26px;
+}
+
+.humberger{
+  left: 60%;
+}
+
+.xmark{
+  top: 60%;
+  left: 50%;
+  transform: rotate(90deg);
+  transform-origin: top left;
+}
+
+.go-up{
+  transform: rotate(-90deg);
+}
+
+
+.description.go-up{
+  transform: rotate(-20deg);
+}
+
+/* navigation bar */
+
+.container nav{
+  color: white;
+  position: fixed;
+  top: 300px;
+  left: -190px;
+  font-size: 17px;
+}
+
+li{
+  width: 200px;
+  list-style-type: none;
+  margin: 20%;
+  transition: transform 0.5s linear;
+  position: relative;
+}
+
+li.home{
+  left: -20px;
+}
+
+li.contact{
+  left: 10px;
+}
+
+nav i{
+  margin-right: 10px;
+}
+
+li.go-up{
+  transform: translateX(140px);
+}

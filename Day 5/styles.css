@@ -1,0 +1,63 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  color: white;
+  overflow-x: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container{
+  width: 100%;
+  height: 100vh;
+  background-image: url('https://cdn.pixabay.com/photo/2022/04/16/14/51/woman-7136446_960_720.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  animation: animatedBackgroundImage ease 3s;
+  animation-fill-mode: forwards;
+
+
+  /* filter: blur(100px); */
+
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+
+@keyframes animatedBackgroundImage {
+  0% {
+    filter: blur(30px);
+  }
+  100%{
+    filter: blur(0px);
+  }
+}
+
+p{
+  margin: 0;
+  font-size: 10vh;
+  position: absolute;
+  animation: animatedParagraph ease 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes animatedParagraph {
+  0% {
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+}
+
+
+img{
+  max-width: 100%;
+  height: auto;
+}
