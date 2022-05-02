@@ -17,7 +17,7 @@ body{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
+} 
 
 
 form{
@@ -68,7 +68,7 @@ form input.focus  {
   position: absolute;
   bottom: 21px;
   left: 1.3px;
-  color: #white;
+  color: white;
 }
 
 .placeholder span{
