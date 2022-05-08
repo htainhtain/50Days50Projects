@@ -1,7 +1,6 @@
 let faqBoxes = document.querySelectorAll('.faq-box')
 
 
-
 faqBoxes.forEach(faqBox => {
     faqBox.addEventListener('click', event => {
         if (event.target.classList.contains('fa-chevron-down')) {
