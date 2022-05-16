@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+body{
+    height: 100vh;
+    width: auto;
+}
+
+.container{
+    height: 100%;
+    background-color: #92B4EC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .animated-countup{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+div.social{
+    color: white;
+    margin: 25px;
+    font-size: 3vh;
+}
+
+.social i{
+    font-size: 60px;
+}
+
+.social .number{
+    font-size: 40px;
+    margin: 10px 0px;
+}
