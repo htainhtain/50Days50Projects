@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #72147e;
+  margin: 0px auto;
+}
+
+.container {
+  max-width: 1440px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.container button {
+  background-color: #f21170;
+  width: 200px;
+  height: 50px;
+  color: white;
+  border-radius: 5px;
+  border: 0px;
+  font-size: 15px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.container .filter {
+  width: 10px;
+  height: 10px;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 50%;
+  transform: scale(0);
+  position: absolute;
+  transition: 0.6s ease;
+}
+
+.container .filter.click {
+  transform: scale(50);
+  opacity: 0;
+}
