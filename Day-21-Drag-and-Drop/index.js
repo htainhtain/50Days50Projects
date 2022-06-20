@@ -18,7 +18,9 @@ const dragElement = (elmnt) => {
     divWithCurrentImage = document.querySelector(".image");
     if (e.target.classList.contains("image")) {
       document.onmouseup = closeDragElement;
+      document.ontouchend = closeDragElement;
       document.onmousemove = elementDrag;
+      document.ontouchmove  = elementDrag;
     }
   };
 
@@ -79,6 +81,7 @@ const dragElement = (elmnt) => {
   };
 
   elmnt.onmousedown = dragMouseDown;
+  elmnt.ontouchstart = dragMouseDown;
 };
 
 boxesDom.forEach((box) => {
