@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day 22 Drawing App</title>
+
+    <!-- css link  -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="container-content">
+        <div class="conatiner-canvas">
+          <!-- canva size is limit in default - 300 x 150 -->
+          <canvas id="canvas" width="800" height="500"></canvas>
+        </div>
+      </div>
+      <div class="container-control">
+        <div class="pixel-size">
+          <button class="pixel-button pixel-button-minus">-</button>
+          <span class="pixel-value">5</span>
+          <button class="pixel-button pixel-button-plus">+</button>
+        </div>
+        <div class="color-input">
+          <input type="color" id="color" name="body" />
+        </div>
+        <div class="clear-canvas-button">
+          <button class="rest-button">X</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- javascript link -->
+    <script src="index.js"></script>
+  </body>
+</html>

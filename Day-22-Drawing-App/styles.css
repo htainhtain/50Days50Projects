@@ -1,0 +1,67 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #142850;
+}
+
+.container{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+canvas {
+  border: 1px solid #00A8CC;
+}
+
+
+.container-control{
+    display: flex;
+    align-items: center;
+    /* font-size: 30px; */
+    background-color: #00A8CC;
+    width: 805px;
+    padding: 20px;
+}
+
+.container-control .pixel-size > *,
+.container-control .clear-canvas-button > * {
+    width: 50px;
+    height: 50px;
+    font-size: 40px;
+}
+
+.container-control .pixel-size span{
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    padding: 2px 15px;
+}
+
+.container-control .color-input{
+    margin: 0px 20px;
+}
+
+.container-control .color-input img{
+    max-width: 45px;
+}
+
+.container-control .color-input .colorpick-eyedropper-input-trigger{
+    min-width: 45px;
+}
+
+.container-control .color-input input[type='color'] {
+    width: 50px;
+    height: 50px;
+}
+
+.container-control .clear-canvas-button{
+    margin-left: auto;
+}
