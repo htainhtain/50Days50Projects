@@ -27,6 +27,8 @@ body {
   border-left: 60px solid transparent;
   border-bottom: 0;
   border-top: 50px solid #b21f66;
+  animation: 4s kite-first infinite;
+  transform-origin: bottom center;
 }
 
 .kite-container .kite .kite-item.kite-second {
@@ -34,4 +36,29 @@ body {
   border-left: 60px solid transparent;
   border-top: 0;
   border-bottom: 50px solid #b21f66;
+  animation: 4s kite-second infinite;
+  transform-origin: top center;
+}
+
+@keyframes kite-first {
+    from {
+        transform: rotate(0deg);
+    }
+    
+    to{
+        
+        transform: rotate(180deg);
+    }
+}
+
+
+@keyframes kite-second {
+    from {
+        transform: rotate(0deg);
+        /* transform-origin: center; */
+    }
+    
+    to{
+        transform: rotate(-180deg);
+    }
 }
