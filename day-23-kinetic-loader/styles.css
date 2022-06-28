@@ -20,45 +20,54 @@ body {
 .kite-container .kite .kite-item {
   width: 0px;
   height: 0px;
+  border-right: 30px solid transparent;
+  border-left: 30px solid transparent;
 }
 
 .kite-container .kite .kite-item.kite-first {
-  border-right: 80px solid transparent;
-  border-left: 60px solid transparent;
   border-bottom: 0;
-  border-top: 50px solid #b21f66;
-  animation: 4s kite-first infinite;
+  border-top: 30px solid #b21f66;
+  animation: 4s kite-first linear infinite;
   transform-origin: bottom center;
 }
 
 .kite-container .kite .kite-item.kite-second {
-  border-right: 80px solid transparent;
-  border-left: 60px solid transparent;
   border-top: 0;
-  border-bottom: 50px solid #b21f66;
-  animation: 4s kite-second infinite;
+  border-bottom: 30px solid #b21f66;
+  animation: 4s kite-second linear infinite 1s;
+  transform: rotate(90deg);
   transform-origin: top center;
 }
 
 @keyframes kite-first {
-    from {
-        transform: rotate(0deg);
-    }
-    
-    to{
-        
-        transform: rotate(180deg);
-    }
+  0%,
+  25% {
+    transform: rotate(0deg);
+  }
+
+  50%,
+  75% {
+    transform: rotate(180deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 
 @keyframes kite-second {
-    from {
-        transform: rotate(0deg);
-        /* transform-origin: center; */
-    }
-    
-    to{
-        transform: rotate(-180deg);
-    }
+  0%,
+  25% {
+    transform: rotate(90deg);
+  }
+
+  50%,
+  75%{
+    transform: rotate(270deg);
+  }
+
+  100% {
+    transform: rotate(450deg);
+  }
 }
