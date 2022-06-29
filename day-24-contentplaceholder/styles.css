@@ -9,6 +9,10 @@ body {
   color: black;
 }
 
+.hidden-content {
+  visibility: hidden;
+}
+
 .content-container {
   max-width: 1440px;
   height: 100vh;
@@ -42,10 +46,7 @@ body {
   animation: loading-card-img 1s infinite;
 }
 
-.content-container
-  .content-card
-  .content-card-img
-  .content-card-img-loader.load {
+.load {
   background-image: linear-gradient(
     to left,
     rgba(251, 251, 251, 0.03),
@@ -103,17 +104,6 @@ body {
   height: 10px;
 }
 
-.content-card-description-text-loader.load {
-  background-image: linear-gradient(
-    to left,
-    rgba(251, 251, 251, 0.03),
-    rgba(251, 251, 251, 0.3),
-    rgba(251, 251, 251, 0.6),
-    rgba(251, 251, 251, 0.3),
-    rgba(251, 251, 251, 0.03)
-  );
-}
-
 @keyframes description-text {
   0% {
     left: -50px;
@@ -162,17 +152,6 @@ body {
   animation: avatar-img 1s infinite;
 }
 
-.avatar .avatar-img-loader.load {
-  background-image: linear-gradient(
-    to left,
-    rgba(251, 251, 251, 0.03),
-    rgba(251, 251, 251, 0.3),
-    rgba(251, 251, 251, 0.6),
-    rgba(251, 251, 251, 0.3),
-    rgba(251, 251, 251, 0.03)
-  );
-}
-
 @keyframes avatar-img {
   0% {
     left: -40px;
@@ -208,17 +187,6 @@ body {
   100% {
     left: 40px;
   }
-}
-
-.avatar-description-loader.load {
-  background-image: linear-gradient(
-    to left,
-    rgba(251, 251, 251, 0.03),
-    rgba(251, 251, 251, 0.3),
-    rgba(251, 251, 251, 0.6),
-    rgba(251, 251, 251, 0.3),
-    rgba(251, 251, 251, 0.03)
-  );
 }
 
 .content-card-description .content-card-description-profile h5 {
