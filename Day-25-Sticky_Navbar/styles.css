@@ -1,0 +1,102 @@
+* {
+  box-sizing: border-box;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #222222;
+  color: white;
+  padding: 6px 100px;
+  position: sticky;
+  top: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+header.change-color {
+  background-color: #fff;
+  color: black;
+  padding: 1px 100px;
+}
+
+header.change-color nav ul .nav-link a {
+  color: black;
+}
+
+header nav ul {
+  padding: 0;
+}
+
+header nav ul,
+header nav ul .nav-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header nav ul .nav-link {
+  width: 250px;
+}
+
+header nav ul .nav-link a {
+  text-decoration: none;
+  color: white;
+}
+
+header nav ul li h2 {
+  margin: 0;
+  padding: 0;
+}
+
+header nav ul li {
+  list-style: none;
+}
+
+main {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-image: url("https://images.unsplash.com/photo-1616004655123-818cbd4b3143?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+main .hero-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 60px;
+}
+
+main p {
+  width: 500px;
+  text-align: center;
+}
+
+.content {
+  padding: 20px 100px;
+}
+
+.content h3 {
+  font-size: 30px;
+  margin: 0px 0px 10px 0px;
+}
+
+.content p {
+  font-size: 17px;
+  line-height: 30px;
+}
