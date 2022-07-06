@@ -1,0 +1,110 @@
+* {
+  box-sizing: border-box;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  height: 100vh;
+}
+
+.slider-container {
+  height: 100%;
+  display: flex;
+  position: relative;
+}
+
+.slider-container .slider-container-description-container {
+  position: relative;
+  top: -400vh;
+  transition: 0.5s ease-in;
+}
+
+.slider-container .slider-container-desciprtion {
+  height: 100vh;
+  width: 35vw;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider-container .slider-container-desciprtion:nth-child(5) {
+  background-color: rgb(184,191,173);
+}
+
+.slider-container .slider-container-desciprtion:nth-child(4) {
+  background-color: #FEC36E;
+}
+
+.slider-container .slider-container-desciprtion:nth-child(3) {
+  background-color: #AF8056;
+}
+
+.slider-container .slider-container-desciprtion:nth-child(2) {
+  background-color: #8E9CA5;
+}
+
+.slider-container .slider-container-desciprtion:nth-child(1) {
+  background-color: #CC7250;
+}
+
+.slider-container .slider-container-desciprtion h1 {
+  margin: 0;
+  padding: 0;
+}
+
+.slider-container .slider-container-gallery {
+  height: 100vh;
+  width: 65vw;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  bottom: 0vh;
+  transition: 0.5s ease-in;
+}
+
+.slider-container .slider-container-gallery img {
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.slider-container-action button {
+  border: 0;
+  height: 45px;
+  width: 35px;
+  background-color: white;
+  cursor: pointer;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 20px;
+}
+
+.slider-container-action button:nth-child(1) {
+  top: 45%;
+  left: 35%;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.slider-container-action button:nth-child(2) {
+  top: 52.3%;
+  left: 32.4%;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+.slider-container-action button:hover i {
+  color: black;
+}
+
+.slider-container-action button i {
+  color: #aaa;
+}
