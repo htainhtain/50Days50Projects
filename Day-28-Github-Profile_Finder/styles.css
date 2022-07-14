@@ -1,0 +1,133 @@
+* {
+  box-sizing: border-box;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #ff6464;
+  height: 100vh;
+  color: white;
+}
+
+.github-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* github finder  */
+.github-container .github-finder {
+  width: 100%;
+  max-width: 700px;
+}
+
+.github-container .github-finder input {
+  width: 100%;
+  height: 50px;
+  background-color: #ffaa64;
+  border: 0px;
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+  font-size: 15px;
+}
+
+input:focus {
+  outline-color: #ffaa64;
+}
+
+.github-container .github-finder input::placeholder {
+  color: white;
+  font-size: 15px;
+}
+
+/* github profile */
+.github-container .github-profile {
+  max-width: 700px;
+  padding: 20px;
+  background-color: #ffaa64;
+  margin: 30px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.github-container .github-profile .profile-description {
+  margin-left: 15px;
+  width: 100%;
+}
+
+.github-container
+  .github-profile
+  .profile-description
+  .profile-description-name {
+  font-size: 25px;
+  margin-bottom: 5px;
+}
+
+.github-container .github-profile .profile-pic {
+  width: 200px;
+  height: 200px;
+}
+
+.github-container .github-profile .profile-pic img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 10px solid #ff8264;
+}
+
+.github-container
+  .github-profile
+  .profile-description
+  .profile-description-stats {
+  display: flex;
+}
+
+.profile-description-stats-content {
+  margin-right: 10px;
+}
+
+.stat-name {
+  font-weight: 900;
+}
+
+.profile-description-repos {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  /* width: 100%; */
+}
+
+.profile-description-repos > .profile-description-repo-item {
+  background-color: #ff8264;
+  padding: 5px;
+  border-radius: 5px;
+  margin-right: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+  border: 0px;
+}
+
+.profile-description-repos .profile-description-repo-item a {
+  text-decoration: none;
+  color: black;
+}
+
+@media (max-width: 1024px) {
+  .github-container .github-profile {
+    max-width: 400px;
+    flex-direction: column;
+  }
+
+  .github-container .github-finder {
+    width: 100%;
+    max-width: 450px;
+  }
+}
