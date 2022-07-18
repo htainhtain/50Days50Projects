@@ -22,7 +22,7 @@ This is the 50days50projects by [bradtraversy](https://github.com/bradtraversy/5
 |13|Random Choice Picker|[Live](https://htainhtain.github.io/50Days50Projects/Day-13-Random-Choice-Picker/)|
 |14|Animated Nav Bar|[Live](https://htainhtain.github.io/50Days50Projects/Day-14-Animated-Navbar/)|
 |15|Increment Counter|[Live](https://htainhtain.github.io/50Days50Projects/Day-15-Increment-Counter/)|
-|16|Drink Water|[Live](https://htainhtain.github.io/50Days50Projects/Day-16-Drink-Water/)|
+|16|Drink Water|[Live](https://htainhtain.github.io/50Days50Projects/Day-16-Drink-water/)|
 |17|Movie App|[Live](https://htainhtain.github.io/50Days50Projects/Day-17-Movie-App/)|
 |18|Background Slider|[Live](https://htainhtain.github.io/50Days50Projects/Day-18-Background-Slider/)|
 |19|Theme Clock|[Live](https://htainhtain.github.io/50Days50Projects/Day-19-Theme-Clock/)|
