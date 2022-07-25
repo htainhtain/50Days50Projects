@@ -31,43 +31,54 @@ generatePasswordForm.addEventListener("submit", (e) => {
 });
 
 const passwordType = (passwordTypeIndex) => {
-  if (passwordTypeIndex === 0) {
-    return upperCaseLetters.charAt(
-      Math.floor(Math.random() * upperCaseLetters.length)
-    );
-  } else if (passwordTypeIndex === 1) {
-    return lowerCaseLetters.charAt(
-      Math.floor(Math.random() * lowerCaseLetters.length)
-    );
-  } else if (passwordTypeIndex === 2) {
-    return num.charAt(Math.floor(Math.random() * num.length));
-  } else {
-    return sym.charAt(Math.floor(Math.random() * sym.length));
+  return passwordTypeIndex === 0
+    ? upperCaseLetters.charAt(
+        Math.floor(Math.random() * upperCaseLetters.length)
+      )
+    : passwordTypeIndex === 1
+    ? lowerCaseLetters.charAt(
+        Math.floor(Math.random() * lowerCaseLetters.length)
+      )
+    : passwordTypeIndex === 2
+    ? num.charAt(Math.floor(Math.random() * num.length))
+    : sym.charAt(Math.floor(Math.random() * sym.length));
+};
+
+const getTruePasswordTypes = (arr, value) => {
+  let indexs = [],
+    i;
+  for (i = 0; i < arr.length; i++) {
+    if (arr[i] === value) {
+      indexs.push(i);
+    }
   }
+  return indexs;
 };
 
 const generatePassword = (length, upperCase, lowerCase, num, sym) => {
-  passwordIndex = 0;
   password = "";
+  const passwordTypes = [upperCase, lowerCase, num, sym];
+  const indexes = getTruePasswordTypes(passwordTypes, true);
+  let indexpasswordTypes = 0;
+
   for (let i = 0; i < length; i++) {
-    if (passwordIndex === 4) {
-      passwordIndex = 0;
+    if (indexpasswordTypes >= indexes.length) {
+      indexpasswordTypes = 0;
     }
-    if (upperCase && passwordIndex === 0) {
-      password += passwordType(passwordIndex);
+    if (upperCase && indexes[indexpasswordTypes] === 0) {
+      password += passwordType(0);
     }
-    if (lowerCase && passwordIndex === 1) {
-      password += passwordType(passwordIndex);
+    if (lowerCase && indexes[indexpasswordTypes] === 1) {
+      password += passwordType(1);
     }
-    if (num && passwordIndex === 2) {
-      password += passwordType(passwordIndex);
+    if (num && indexes[indexpasswordTypes] === 2) {
+      password += passwordType(2);
     }
-    if (sym && passwordIndex === 3) {
-      password += passwordType(passwordIndex);
+    if (sym && indexes[indexpasswordTypes] === 3) {
+      password += passwordType(3);
     }
-    passwordIndex++;
+    indexpasswordTypes++;
   }
-  console.log(password);
   passwordDom.innerHTML = `${password}`;
 };
 
