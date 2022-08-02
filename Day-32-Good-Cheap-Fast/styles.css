@@ -1,0 +1,115 @@
+* {
+  box-sizing: border-box;
+  font-family: "Kumbh Sans", sans-serif;
+  color: white;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-color: #231a31;
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* styling all check items */
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 150px;
+  margin: 10px auto;
+}
+
+.item .description {
+  margin-right: auto;
+  margin-left: 40px;
+  font-size: 16px;
+}
+
+/*
+* applying switch styles
+*/
+.switch {
+  width: 60px;
+  height: 36px;
+  position: relative;
+  display: inline-block;
+}
+
+.switch input {
+  opacity: 0;
+  height: 0;
+  width: 0;
+}
+
+.switch .slider {
+  position: absolute;
+  cursor: pointer;
+  background-color: #b42b3f;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: 0.4s;
+  border-radius: 30px;
+}
+
+.switch .slider::before {
+  content: "";
+  position: absolute;
+  background-color: white;
+  top: 3px;
+  left: 3px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #8ab2ff;
+}
+
+input:checked + .slider::before {
+  animation: enlargeRight 0.4s forwards;
+}
+
+input:not(:checked) + .slider::before {
+    animation: enlargeLeft 0.4s forwards;
+  }
+
+@keyframes enlargeRight {
+  0% {
+    transform: scale(1) translateX(0);
+  }
+
+  50% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1) translateX(24px);
+  }
+}
+
+@keyframes enlargeLeft {
+    0% {
+      transform: scale(1) translateX(24px);
+    }
+  
+    50% {
+      transform: scale(1.2);
+    }
+  
+    100% {
+      transform: scale(1) translateX(0px);
+    }
+  }
