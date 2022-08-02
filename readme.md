@@ -38,4 +38,4 @@ This is the 50days50projects by [bradtraversy](https://github.com/bradtraversy/5
 |29|Double Click Heart|[Live](https://htainhtain.github.io/50Days50Projects/Day-29-Double-Click_Heart/)|
 |30|Auto Text Effect|[Live](https://htainhtain.github.io/50Days50Projects/Day-30-AutoText-Effect/)|
 |31|Password Generator|[Live](https://htainhtain.github.io/50Days50Projects/Day-31-Password-Generator/)|
-|31|Good Cheap Fast Triangle|[Live](https://htainhtain.github.io/50Days50Projects/Day-32-Good-Cheap-Fast/)|
+|32|Good Cheap Fast Triangle|[Live](https://htainhtain.github.io/50Days50Projects/Day-32-Good-Cheap-Fast/)|
