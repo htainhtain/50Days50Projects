@@ -24,7 +24,7 @@ const createMovieDisplay = (title, rating, imgUrl, overview) => {
   movieDisplay.appendChild(movieDisplayMovieDiv);
 };
 
-const getMovies = async () => {
+const getMovies = async () => { 
   let res = await fetch(
     "https://api.themoviedb.org/3/movie/top_rated?api_key=6f19e6239469181019ba9191b5879ee2"
   );
